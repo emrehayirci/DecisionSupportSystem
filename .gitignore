@@ -1,2 +1,4 @@
 #Visual Studio Binary Packages
 packages
+bin 
+obj 
