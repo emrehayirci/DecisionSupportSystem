@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Decision Support System</h1>
+
+    <p class="lead">Upload Files to Calculate!</p>
+</div>
+
+<div class="row">
+    <section class="main-content clear-fix">
+        <form name="form1" method="post" enctype="multipart/form-data" action="Decision/Calculate">
+            <fieldset>
+                <legend>Upload File For Evaluation</legend>
+                <div>
+                    <label for="postedFile">Arff or CSV File</label>
+                    <input name="postedFile" type="file" />
+                </div>
+                <div>
+                    <input type="submit" value="Submit" />
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</div>

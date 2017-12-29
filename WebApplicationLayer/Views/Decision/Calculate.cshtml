@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Decision Support System</h1>
+    <div class="alert alert-success" role="alert">
+        <p class="lead">@ViewBag.Message</p>
+    </div>
+</div>
+
+<div class="row">
+    @for (var i = 0; i < 15; i++)
+    {
+    <div class="panel panel-default">
+        <div class="panel-heading">@ViewBag.Results["names"][i]</div>
+        <div class="panel-body">
+            @ViewBag.Results["values"][i]
+        </div>
+    </div>
+    }
+</div>
